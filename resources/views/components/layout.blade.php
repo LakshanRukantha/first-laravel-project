@@ -26,6 +26,13 @@
             </div>
         </nav>
     </div>
+    @isset($pageTitle)
+        <div class="max-w-5xl py-4 px-4 lg:px-0 w-full">
+            <h1 class="text-2xl font-bold"> {{ $pageTitle }}</h1>
+        </div>
+    @endisset
+
+    <hr class="bg-slate-500 max-w-5xl w-full" />
     <div class="max-w-5xl py-4 px-4 lg:px-0 w-full">
         {{ $slot }}
     </div>

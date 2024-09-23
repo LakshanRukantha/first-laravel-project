@@ -1,3 +1,4 @@
 <x-layout>
-    <h1>Contact Us Page</h1>
+    <x-slot:pageTitle>Contact Us</x-slot:pageTitle>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio nisi saepe et dolorum illo eveniet, nihil debitis atque voluptates eligendi? Exercitationem, quisquam! Dolorum?</p>
 </x-layout>
