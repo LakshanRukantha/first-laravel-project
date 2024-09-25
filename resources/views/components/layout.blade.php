@@ -15,7 +15,9 @@
         <nav
             class="flex max-w-5xl border-b-2 w-full text-lg items-center py-3 z-10 bg-gray-100 md:bg-transparent px-4 lg:px-0">
             <div class="flex flex-1 gap-4">
-                <x-nav-link href="/" class="font-bold uppercase text-orange-500 py-1">Smart Hub</x-nav-link>
+                <x-nav-link href="/" class="font-bold text-xl uppercase text-orange-500 py-1"><i
+                        class="fa-solid fa-mobile-screen-button mr-1"></i>Smart <span
+                        class="text-gray-500">Hub</span></x-nav-link>
                 <ul class="hidden md:flex gap-1">
                     <x-nav-link href="/"
                         class="{{ request()->is('/') ? 'bg-orange-500/80 hover:bg-orange-500/90 text-white' : '' }} py-1 px-4 transition-colors rounded-full">Home</x-nav-link>
@@ -26,8 +28,8 @@
                 </ul>
             </div>
             <div class="hidden md:flex gap-2">
-                <x-nav-link type='button'
-                    class="text-white bg-blue-500 hover:bg-blue-600 py-1 px-4 rounded">Login</x-nav-link>
+                <x-nav-link type='button' class="text-white bg-blue-500 hover:bg-blue-600 py-1 px-4 rounded"><i
+                        class="fa-solid fa-arrow-right-to-bracket mr-2"></i>Login</x-nav-link>
                 <x-nav-link type='button'
                     class="text-blue-500 bg-transparent border hover:bg-blue-500 hover:text-white transition-colors border-blue-500 py-1 px-4 rounded">Register</x-nav-link>
             </div>
