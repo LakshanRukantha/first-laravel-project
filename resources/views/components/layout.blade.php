@@ -15,14 +15,14 @@
         <nav
             class="flex max-w-5xl border-b-2 w-full text-lg items-center py-3 z-10 bg-gray-100 md:bg-transparent px-4 lg:px-0">
             <div class="flex flex-1 gap-4">
-                <x-nav-link href="/" class="font-bold uppercase text-red-500 py-1">Laravel</x-nav-link>
+                <x-nav-link href="/" class="font-bold uppercase text-orange-500 py-1">Smart Hub</x-nav-link>
                 <ul class="hidden md:flex gap-1">
                     <x-nav-link href="/"
-                        class="{{ request()->is('/') ? 'bg-red-500/80 hover:bg-red-500/90 text-white' : '' }} py-1 px-4 transition-colors rounded-full">Home</x-nav-link>
+                        class="{{ request()->is('/') ? 'bg-orange-500/80 hover:bg-orange-500/90 text-white' : '' }} py-1 px-4 transition-colors rounded-full">Home</x-nav-link>
                     <x-nav-link href="/products"
-                        class="{{ request()->is('products') ? 'bg-red-500/80 hover:bg-red-500/90 text-white' : '' }} py-1 px-4 transition-colors rounded-full">Products</x-nav-link>
+                        class="{{ request()->is('products') ? 'bg-orange-500/80 hover:bg-orange-500/90 text-white' : '' }} py-1 px-4 transition-colors rounded-full">Products</x-nav-link>
                     <x-nav-link href="/contact"
-                        class="{{ request()->is('contact') ? 'bg-red-500/80 hover:bg-red-500/90 text-white' : '' }} py-1 px-4 transition-colors rounded-full">Contact</x-nav-link>
+                        class="{{ request()->is('contact') ? 'bg-orange-500/80 hover:bg-orange-500/90 text-white' : '' }} py-1 px-4 transition-colors rounded-full">Contact</x-nav-link>
                 </ul>
             </div>
             <div class="hidden md:flex gap-2">
@@ -38,11 +38,11 @@
             class="absolute transition-all flex -top-40 z-0 left-0 bg-gray-100 duration-300 shadow w-full">
             <ul class="flex flex-col md:hidden w-full gap-2 py-2 px-4">
                 <x-nav-link href="/"
-                    class="{{ request()->is('/') ? 'bg-red-500/80 hover:bg-red-500/90 text-white' : '' }} hover:bg-red-200/50 py-2 px-4 transition-colors">Home</x-nav-link>
+                    class="{{ request()->is('/') ? 'bg-orange-500/80 hover:bg-orange-500/90 text-white' : '' }} hover:bg-orange-200/50 py-2 px-4 transition-colors">Home</x-nav-link>
                 <x-nav-link href="/products"
-                    class="{{ request()->is('products') ? 'bg-red-500/80 hover:bg-red-500/90 text-white' : '' }} hover:bg-red-200/50 py-2 px-4 transition-colors w-full">Products</x-nav-link>
+                    class="{{ request()->is('products') ? 'bg-orange-500/80 hover:bg-orange-500/90 text-white' : '' }} hover:bg-orange-200/50 py-2 px-4 transition-colors w-full">Products</x-nav-link>
                 <x-nav-link href="/contact"
-                    class="{{ request()->is('contact') ? 'bg-red-500/80 hover:bg-red-500/90 text-white' : '' }} hover:bg-red-200/50 py-2 px-4 transition-colors">Contact</x-nav-link>
+                    class="{{ request()->is('contact') ? 'bg-orange-500/80 hover:bg-orange-500/90 text-white' : '' }} hover:bg-orange-200/50 py-2 px-4 transition-colors">Contact</x-nav-link>
                 <hr />
                 <div class="flex w-full gap-2">
                     <x-nav-link type='button'
