@@ -1,6 +1,5 @@
 <?php
 
-use Illuminate\Support\Arr;
 use Illuminate\Support\Facades\Route;
 use App\Models\Product;
 
@@ -10,13 +9,12 @@ Route::get('/', function () {
 
 Route::get('/products', function () {
     return view('products', [
-        'products' => Product::all()
+        'products' => Product::all(),
     ]);
 });
 
 Route::get('/product/{id}', function ($id) {
-
-    $product = Arr::first(Product::all(), fn($product) => $product['id'] == $id);
+    $product = Product::find($id);
 
     return view('product', ['product' => $product]);
 });
